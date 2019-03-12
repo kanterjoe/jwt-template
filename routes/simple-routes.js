@@ -39,6 +39,9 @@ router.post('/token', function(req,res) {
         })
 
     }
+    else {
+        res.sendStatus(401).send();
+    }
 });
 
 
